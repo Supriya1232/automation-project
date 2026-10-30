@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: tests.SiteModulesFlowTest
--------------------------------------------------------------------------------
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 236.5 s -- in tests.SiteModulesFlowTest
