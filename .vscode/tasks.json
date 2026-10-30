@@ -1,0 +1,46 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SRA: run homepage test (show Chrome)",
+      "type": "shell",
+      "command": "mvn",
+      "args": ["-Dtest=HomePageSmokeTest", "test", "-Dheadless=false"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": { "kind": "test", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "SRA: run all tests (show Chrome)",
+      "type": "shell",
+      "command": "mvn",
+      "args": ["test", "-Dheadless=false"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "SRA: click and scroll each site module",
+      "type": "shell",
+      "command": "mvn",
+      "args": ["-Dtest=SiteModulesFlowTest", "test", "-Dheadless=false"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "SRA: check every PDF document",
+      "type": "shell",
+      "command": "mvn",
+      "args": ["-Dtest=PdfDocumentsTest", "test", "-Dheadless=false", "-Dkeep.browser.open=true"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "SRA: run all tests (headless)",
+      "type": "shell",
+      "command": "mvn",
+      "args": ["test"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}

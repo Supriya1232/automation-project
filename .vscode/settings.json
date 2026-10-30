@@ -1,0 +1,11 @@
+{
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.test.defaultConfig": "SRA Pune (Chrome visible)",
+  "java.test.config": [
+    {
+      "name": "SRA Pune (Chrome visible)",
+      "workingDirectory": "${workspaceFolder}",
+      "vmArgs": ["-Dheadless=false"]
+    }
+  ]
+}
